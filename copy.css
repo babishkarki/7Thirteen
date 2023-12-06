@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------- Header Css ------------------------- */
+
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: #EF5026;
+}
+
+.tag {
+    text-align: center;
+    margin-top: 30rem;
+    font-weight: 900;
+    font-size: 7rem;
+    color: #fff;
+}
+
+.unisex {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.welcome {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-style: normal;
+}
+
+/* ------------------- Nav Css ------------------------- */
+
+/* Nav */
+.navbar-nav .nav-item .nav-link {
+    margin-right: 40px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.logo {
+    width: 180px;
+    margin-left: 40px;
+}
+
+
+/* Nav link Hover */
+.nav-item .nav-link:hover {
+    color: #EF5026;
+}
+
+/* Hamburger Color */
+.navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hamburger Border */
+.navbar-toggler {
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255);
+}
+
+
+/* Style for the Services */
+.nav-item.dropdown a.nav-link {
+    color: #fff;
+}
+
+/* Style for the Services dropdown color*/
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
+    color: black;
+}
+
+/* Style for the Services Hover*/
+.nav-item.dropdown a.nav-link:hover {
+    color: #EF5026;
+}
+
+/* ------------- Services ----------------- */
+
+
+#about{
+    height: 100vh;
+}
+
+
+
+@media (max-width:1350px) {
+    header {
+        background-position: 50%;
+    }
+
+    .tag {
+        font-size: 5rem;
+    }
+
+    .unisex {
+        font-size: 2rem;
+
+    }
+
+    .welcome {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 145px;
+        height: 60px;
+        margin-left: 40px;
+    }
+
+    .tag {
+        font-size: 5rem;
+    }
+
+    .unisex {
+        font-size: 2rem;
+
+    }
+
+    .welcome {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:764px) {
+
+    .navbar-nav .dropdown-menu{
+        margin: 0 25%;
+    }
+
+    .navbar-collapse{
+        border-radius: 30px;
+        background-color: #191919;
+        height: auto;
+    }
+
+    .dropdown-menu.show {
+        margin-top: 10px;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu a{
+        text-align: center;
+    }
+    
+
+    .logo {
+        width: 145px;
+        margin-left: 10px;
+    }
+
+    .tag {
+        font-size: 4rem;
+    }
+
+    .unisex {
+        font-size: 2rem;
+
+    }
+
+    .welcome {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .logo {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    .unisex {
+        font-size: 1.5rem;
+    }
+
+    .welcome {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
