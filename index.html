@@ -188,6 +188,45 @@
             </div>
         </div>
     </section>
+
+    <section id="booking">
+        <p class="our-services">Book an appointment</p>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp" required>
+
+                    <label for="InputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+
+                    <label for="InputPhoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="InputPhoneNumber" pattern="^\+977-\d{10}$" aria-describedby="phoneHelp" required>
+
+                    <label for="InputDate" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="InputDate" aria-describedby="dateHelp" style="text-align: center;" required>
+
+                    <label for="exampleInputDropdown" class="form-label">Select Branch</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle drop" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="text-align: center; width: 100%;">
+                            <li><button class="dropdown-item" type="button" value="Kapan" required onclick="updateDropdownText(this)">Kapan</button></li>
+                            <li><button class="dropdown-item" type="button" value="Gyaneshwor" required onclick="updateDropdownText(this)">Gyaneshwor</button></li>
+                            <li><button class="dropdown-item" type="button" value="Tahachal" required onclick="updateDropdownText(this)">Tahachal</button></li>
+                            <li><button class="dropdown-item" type="button" value="BahunDhara" required onclick="updateDropdownText(this)">BahunDhara</button></li>
+                        </ul>
+                      </div>
+                    </div>
+                <div class="mb-3">
+                    <label for="FormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="FormControlTextarea1" rows="4" style="text-align: left;" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #EF5026; color: white; border-color: #EF5026;">Submit</button>
+        </div>
+        </form>
+    </section>
     <script>
         function toggleMarginTop() {
             // Get the "services" section by its ID
@@ -204,6 +243,11 @@
             // Redirect to the landing page
             window.location.href = "index.html"; // replace with your actual landing page URL
         }
+
+        function updateDropdownText(button) {
+        var selectedBranch = button.value;
+        document.getElementById("dropdownMenu2").innerText = selectedBranch;
+    }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
