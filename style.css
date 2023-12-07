@@ -196,6 +196,7 @@ input {
     outline: none;
     border-radius: 0;
     box-shadow: none;
+    text-align: center;
 }
 
 .form-control:focus{
