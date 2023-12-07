@@ -96,7 +96,7 @@ h1 {
 }
 
 
-.booking{
+.booking {
     color: #EF5026;
     text-align: center;
     padding: 20px 20px 35px 20px;
@@ -166,7 +166,7 @@ input {
     margin-bottom: 20px;
 }
 
-.drop{
+.drop {
     width: 100%;
     background-color: transparent;
     outline: 0;
@@ -177,12 +177,16 @@ input {
     text-align: center;
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     background-color: transparent;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-.drop:hover{
+.drop:hover {
     background-color: transparent;
     border-bottom: 2px solid white;
 }
@@ -199,14 +203,28 @@ input {
     text-align: center;
 }
 
-.form-control:focus{
+.form-control:focus {
     color: white;
     background-color: transparent;
     outline: 0;
-    border:none;
+    border: none;
     box-shadow: none;
     border-bottom: 2px solid rgb(255, 255, 255);
     border-radius: 0;
+}
+
+.founder-text {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.founder-span {
+    font-size: 2rem;
+    color: #EF5026;
+}
+
+.founder-img {
+    width: 300px;
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
@@ -222,8 +240,18 @@ input {
         height: 133px;
     }
 
-    form{
+    form {
         width: 50%;
+    }
+
+    .founder-text {
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .founder-span {
+        font-size: 1.7rem;
+        color: #EF5026;
     }
 }
 
@@ -240,8 +268,22 @@ input {
         height: 205px;
     }
 
-    form{
+    form {
         width: 75%;
+    }
+
+    .founder-text {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .founder-span {
+        font-size: 1.5rem;
+        color: #EF5026;
+    }
+
+    .founder-img {
+        width: 250px;
     }
 }
 
@@ -258,8 +300,21 @@ input {
         height: 150px;
     }
 
-    form{
+    form {
         width: 90%;
+    }
+
+    .founder-span {
+        font-size: 1.2rem;
+        color: #EF5026;
+    }
+    .founder-text{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .founder-img {
+        width: 200px;
     }
 }
 
@@ -288,17 +343,37 @@ input {
         height: auto;
     }
 
-    form{
+    form {
         width: 90%;
     }
-    
-    .booking{
+
+    .booking {
         padding: 12px;
         font-size: 38px;
     }
 
-    #booking{
+    #booking {
         height: auto;
+    }
+
+    .founder-span {
+        font-size: 1.2rem;
+        color: #EF5026;
+        margin: 10px 0;
+    }
+
+    .founder-text{
+        text-align: center;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .founder-img {
+        width: 180px;
+    }
+
+    .p-5{
+        padding: 1rem !important;
     }
 
 }
