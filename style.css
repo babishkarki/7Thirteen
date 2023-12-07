@@ -149,7 +149,7 @@ h1 {
 #booking {
     background-image: url(./Rectangle.jpg);
     background-size: cover;
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 
@@ -213,6 +213,12 @@ input {
     border-radius: 0;
 }
 
+.founder-text-woman {
+    color: white;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
 .founder-text {
     font-size: 1.4rem;
     color: white;
@@ -244,14 +250,16 @@ input {
         width: 50%;
     }
 
+    .founder-text-woman {
+        font-size: 1rem;
+    }
+
     .founder-text {
-        font-size: 1.2rem;
-        color: white;
+        font-size: 1rem;
     }
 
     .founder-span {
         font-size: 1.7rem;
-        color: #EF5026;
     }
 }
 
@@ -274,16 +282,22 @@ input {
 
     .founder-text {
         font-size: 1rem;
-        color: white;
+    }
+
+    .founder-text-woman {
+        font-size: 1rem;
     }
 
     .founder-span {
         font-size: 1.5rem;
-        color: #EF5026;
     }
 
     .founder-img {
         width: 250px;
+    }
+
+    .p-5 {
+        padding: 1rem !important;
     }
 }
 
@@ -304,17 +318,26 @@ input {
         width: 90%;
     }
 
+    .founder-text-woman {
+        font-size: 15px;
+        text-align: center;
+    }
+
     .founder-span {
         font-size: 1.2rem;
-        color: #EF5026;
     }
-    .founder-text{
+
+    .founder-text {
         font-size: 15px;
         text-align: center;
     }
 
     .founder-img {
         width: 200px;
+    }
+
+    .p-5 {
+        padding: 1rem !important;
     }
 }
 
@@ -356,23 +379,28 @@ input {
         height: auto;
     }
 
+    .founder-text-woman {
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+
     .founder-span {
         font-size: 1.2rem;
         color: #EF5026;
         margin: 10px 0;
     }
 
-    .founder-text{
+    .founder-text {
         text-align: center;
         font-size: 12px;
-        padding: 0;
     }
 
     .founder-img {
         width: 180px;
     }
 
-    .p-5{
+    .p-5 {
         padding: 1rem !important;
     }
 
