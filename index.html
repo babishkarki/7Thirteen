@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Roboto:wght@900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,7 +35,7 @@
             <img class="logo" src="./IMG_3641.PNG" alt="" href="index.html">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" onclick="toggleMarginTop()">
+                aria-label="Toggle navigation" onclick="toggle()">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,22 +49,6 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#booking">Booking</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">HAIR CUTTING</a></li>
-                            <li><a class="dropdown-item" href="#">HAIR COLORING</a></li>
-                            <li><a class="dropdown-item" href="#">HAIR STYLING</a></li>
-                            <li><a class="dropdown-item" href="#">FACIALS</a></li>
-                            <li><a class="dropdown-item" href="#">THREADING</a></li>
-                            <li><a class="dropdown-item" href="#">WAXING</a></li>
-                            <li><a class="dropdown-item" href="#">MAKE UP</a></li>
-                            <li><a class="dropdown-item" href="#">TRAINING</a></li>
-                        </ul>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Price</a>
                     </li>
@@ -82,10 +68,10 @@
             style="background-color: rgba(43, 43, 43, var(--bs-bg-opacity)) !important;">
             <div class="container">
                 <p class="our-services">Our Services</p>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-4  g-4">
                     <div class="col" data-aos="fade-down" data-aos-delay="100">
-                        <div class="card shadow-sm bg-transparent border-0">
-                            <img src="./CompressCutting2.jpg" alt="" loading="lazy" style="border: 3px solid #EF5026; border-radius: 10px;">
+                        <div class="card bg-transparent border-0">
+                            <img class="services-img" src="./CompressCutting2.jpg" alt="">
                             <div class="card-body">
                                 <h4 class="card-text text-center text-white mt-3">Hair Cutting</h4>
                                 <div class="d-flex justify-content-center align-items-center">
@@ -97,99 +83,99 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card shadow-sm bg-transparent border-0">
-                            <img src="./coloring.jpg" alt="" loading="lazy" style="border: 3px solid #EF5026; border-radius: 10px;"">
+                        <div class="card  bg-transparent border-0">
+                            <img class="services-img" src="./coloring.jpg" alt="">
                             <div class=" card-body">
-                            <h4 class="card-text text-center text-white mt-3">Hair Coloring</h4>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="btn-group mt-3">
-                                    <button type="button" class="btn btn-primary">More</button>
+                                <h4 class="card-text text-center text-white mt-3">Hair Coloring</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  bg-transparent border-0 rounded-3">
+                            <img class="services-img" src="./Hair Styling.webp" alt="">
+                            <div class=" card-body">
+                                <h4 class="card-text text-center text-white mt-3">Hair Styling</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-transparent border-0 rounded-3">
+                            <img class="services-img" src="CompressFacial.jpg" alt="">
+                            <div class=" card-body">
+                                <h4 class="card-text text-center text-white mt-3">Facials</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent border-0 rounded-3">
+                            <img class="services-img" src="./threading.jpg" alt="">
+                            <div class=" card-body">
+                                <h4 class="card-text text-center text-white mt-3">Threading</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent border-0 rounded-3">
+                            <img class="services-img" src="./wax1small.jpg" alt="">
+                            <div class=" card-body">
+                                <h4 class="card-text text-center text-white mt-3">Waxing</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-transparent border-0 rounded-3">
+                            <img class="services-img" src="./rendy-novantino-EUydTGTCrHo-unsplash.jpg" alt="">
+                            <div class=" card-body">
+                                <h4 class="card-text text-center text-white mt-3">Make Up</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent border-0 rounded-3">
+                            <img class="services-img" src="./Training.jpg" alt="" loading="lazy">
+                            <div class=" card-body">
+                                <h4 class="card-text text-center text-white mt-3">Training</h4>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group mt-3">
+                                        <button type="button" class="btn btn-primary">More</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card shadow-sm bg-transparent border-0 rounded-3">
-                        <img src="./Hair Styling.webp" alt="" loading="lazy" style="border: 3px solid #EF5026; border-radius: 10px;"">
-                            <div class=" card-body">
-                        <h4 class="card-text text-center text-white mt-3">Hair Styling</h4>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group mt-3">
-                                <button type="button" class="btn btn-primary">More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm bg-transparent border-0 rounded-3">
-                    <img class="facial" src="CompressFacial.jpg" alt="" loading="lazy">
-                    <div class=" card-body">
-                        <h4 class="card-text text-center text-white mt-3">Facials</h4>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group mt-3">
-                                <button type="button" class="btn btn-primary">More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm bg-transparent border-0 rounded-3">
-                    <img src="./threading.jpg" alt="" loading="lazy" style="border: 3px solid #EF5026; border-radius: 10px;">
-                    <div class=" card-body">
-                        <h4 class="card-text text-center text-white mt-3">Threading</h4>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group mt-3">
-                                <button type="button" class="btn btn-primary">More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm bg-transparent border-0 rounded-3">
-                    <img class="waxing" src="./wax1small.jpg" alt="" loading="lazy">
-                    <div class=" card-body">
-                        <h4 class="card-text text-center text-white mt-3">Waxing</h4>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group mt-3">
-                                <button type="button" class="btn btn-primary">More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm bg-transparent border-0 rounded-3">
-                    <img class="waxing" src="./rendy-novantino-EUydTGTCrHo-unsplash.jpg" alt="" loading="lazy">
-                    <div class=" card-body">
-                        <h4 class="card-text text-center text-white mt-3">Make Up</h4>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group mt-3">
-                                <button type="button" class="btn btn-primary">More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm bg-transparent border-0 rounded-3">
-                    <img class="waxing" src="./Training2.jpg" alt="" loading="lazy">
-                    <div class=" card-body">
-                        <h4 class="card-text text-center text-white mt-3">Training</h4>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group mt-3">
-                                <button type="button" class="btn btn-primary">More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section id="booking">
@@ -256,7 +242,8 @@
                                 the shared joy of self-expression..</p>
                         </div>
                         <div class="col-auto order-1 mx-auto">
-                            <img class="founder-img" src="./Compressmen1.jpg" alt="" style="padding-left: 10px;" loading="lazy">
+                            <img class="founder-img" src="./Compressmen1.jpg" alt="" style="padding-left: 10px;"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -291,8 +278,8 @@
                                 meticulous touch that turns hair into a masterpiece.</p>
                         </div>
                         <div class="col-auto order-1 mx-auto">
-                            <img class="founder-img" src="./Compressmen2.jpg" alt=""
-                                style="padding-left: 10px;" loading="lazy">
+                            <img class="founder-img" src="./Compressmen2.jpg" alt="" style="padding-left: 10px;"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -300,27 +287,86 @@
             </div>
         </div>
     </section>
+    <hr style="color: white;">
+    <section>
+        <footer>
+            <div class="column  py-3 ">
+                <h3 class="branch">Our Branch</h3>
+                <p class="address"><i class="fa-solid fa-location-dot"></i>Kapan, Rudra Mati Chowk</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i>Tahachal, Gyaneshowr</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i>Near Softwarica College</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i>BahunDhara, Near Pipal Bot</p>
+            </div>
+
+            <div class="column  py-3 ">
+                <h3 class="branch">Contact Us</h3>
+                <p class="address"><i class="fa-solid fa-phone"></i>
+                    <a href="tel:+9779812345678" class="contact-link">+977-9812345678</a>
+                </p>
+                <p class="address"><i class="fa-solid fa-phone"></i>
+                    <a href="tel:+9779812345678" class="contact-link">+977-9812345678</a>
+                </p>
+                <p class="address"><i class="fa-solid fa-phone"></i>
+                    <a href="tel:+9779812345678" class="contact-link">+977-9812345678</a>
+                </p>
+                <p class="address"><i class="fa-solid fa-phone"></i>
+                    <a href="tel:+9779812345678" class="contact-link">+977-9812345678</a>
+                </p>
+            </div>
+
+            <div class="column">
+                <h3 class="branch" style="padding-top: 25px;">Follow Us</h3>
+                <img src="IMG_3641.PNG" alt="Logo" style="width: 180px;">
+                <a class="py-2" href="https://www.instagram.com/7thirteenHairSalon" target="_blank"
+                    style="text-decoration: none; color: #EF5026;">
+                    <img src="./facebook-icon.png" alt="Instagram Icon" style="width: 40px; text-decoration: none;">
+                    7thirteenHairSalon
+                </a>
+                <a href="https://www.facebook.com/7thirteenHairSalon" target="_blank"
+                    style="text-decoration: none; color: #EF5026;">
+                    <img src="instagram-icon.png" alt="Facebook Icon" style="width: 40px;"> 7thirteenHairSalon
+                </a>
+            </div>
+        </footer>
+    </section>
     <script>
-        function toggleMarginTop() {
+        function toggle() {
             // Get the "services" section by its ID
             var servicesSection = document.getElementById("services");
 
             // Check if the section exists
             if (servicesSection) {
-                // Toggle between 90vh and 64vh for padding-top
-                servicesSection.style.marginTop = (servicesSection.style.marginTop === '65vh') ? '92vh' : '65vh';
+                servicesSection.style.marginTop = (servicesSection.style.marginTop === '52vh') ? '92vh' : '52vh';
             }
         }
 
-        // if (performance.navigation.type === 1) {
-        //     // Redirect to the landing page
-        //     window.location.href = "index.html"; // replace with your actual landing page URL
-        // }
+        if (performance.navigation.type === 1) {
+            window.location.href = "index.html"; 
+        }
 
         function updateDropdownText(button) {
             var selectedBranch = button.value;
             document.getElementById("dropdownMenu2").innerText = selectedBranch;
         }
+
+        function closeNavigation() {
+            var navbar = document.getElementById("navbarSupportedContent");
+
+            if (navbar) {
+                var bootstrapNav = new bootstrap.Collapse(navbar);
+                document.getElementById("services").style.marginTop = '92vh';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var navLinks = document.querySelectorAll("#navbarSupportedContent a");
+
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    setTimeout(closeNavigation, 300);
+                });
+            });
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
